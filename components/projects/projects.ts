@@ -22,7 +22,6 @@ class Projects {
           this.modalImage.src = asset.src;
           this.modalImage.alt = asset.alt;
           this.modalCaption.innerText = asset.alt;
-          console.log('Set image');
         } else {
           this.modalImage.style.display = 'none';
           this.modalVideo.style.display = '';
@@ -32,7 +31,6 @@ class Projects {
             'aria-label', asset.getAttribute('aria-label'));
           this.modalCaption.innerText = asset.getAttribute('aria-label');
           this.modalVideo.load();
-          console.log('Set video');
         }
       });
     });
@@ -45,9 +43,11 @@ class Projects {
       }
     });
     const x: HTMLElement = document.querySelector('.modal__x');
-    x.addEventListener('click', event => {
-      this.modal.classList.remove('display');
-    });
+    if (x) {
+      x.addEventListener('click', event => {
+        this.modal.classList.remove('display');
+      });
+    }
   }
 
   init(): void {
