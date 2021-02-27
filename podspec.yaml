@@ -77,5 +77,5 @@ deployments:
     out_dir: ./build/
     env:
       name: prod
-      host: whelptech.ca
+      host: redoaklandscaping.ca
       scheme: https

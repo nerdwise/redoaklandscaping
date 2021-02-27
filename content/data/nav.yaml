@@ -1,7 +1,7 @@
 component: nav
 id: nav
 logo:
-  url: /static/images/logos/logo-only.svg
+  url: /static/images/logos/redoak.png
   alt: !g.string home.company_name.text
 email: !g.yaml /content/data/contact.yaml?email
 phone: !g.yaml /content/data/contact.yaml?phone

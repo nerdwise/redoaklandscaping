@@ -37,7 +37,9 @@
     width: 30%
 
 .nav__logo
-  height: 50%
+  height: 95%
+  width: auto
+  margin: 0 auto
   transition: height 0.3s, transform 0.3s
 
 .logo__text
@@ -206,8 +208,10 @@
   .nav--minimal
     height: 10vh
     .nav__logo
-      height: 50%
+      height: 95%
+      margin: 0 auto
       transform: none
+      width: auto
   .nav--mobile
     display: block
   .nav__header-button--mobile
@@ -231,7 +235,9 @@
 
 +media($mobile)
   .nav__logo
-    height: 50%
+    height: 95%
+    margin: 0 auto
+    width: auto
   .nav__content--mobile
     overflow: scroll
   .nav__link--mobile
