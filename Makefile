@@ -1,4 +1,4 @@
-project ?= redoaklandscapings
+project ?= redoaklandscaping-edafa
 version ?= auto
 
 build-staging:

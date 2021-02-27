@@ -57,7 +57,7 @@ jobs:
         command: make build-prod
     - run:
         name: Use Production Firebase config
-        command: ./node_modules/.bin/firebase use redoaklandscaping --token=$FIREBASE_DEPLOY_TOKEN
+        command: ./node_modules/.bin/firebase use redoaklandscaping-edafa --token=$FIREBASE_DEPLOY_TOKEN
     - run: *firebase_deploy
 
 workflows:
