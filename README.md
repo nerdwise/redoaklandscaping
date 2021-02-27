@@ -1,4 +1,4 @@
-#  Red Oak Landscaping Promotional Site
+#  Red Oak Landscaping Promo Site
 
 ## Prerequisites
 
