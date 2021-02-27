@@ -4,10 +4,7 @@ $localization:
   path: /{locale}/{root}/
 $order: -1
 description: >-
-  WhelpTech Electrical Services provides Industrial, Commercial, Agricultural
-  and Residential electrical services in the Fraser Valley.  Our experienced
-  Electricians serve Agassiz, Chilliwack, Hope, Harrison Hot Springs, Harrison
-  Mills and Abbotsford.
+  Red Oak Landscaping Services
 
 ng_controller: BaseController
 
