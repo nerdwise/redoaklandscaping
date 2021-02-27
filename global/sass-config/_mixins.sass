@@ -1,0 +1,82 @@
+// Section header
+=section-header
+  font-size: $section-header-font-size
+  +font-weight-light
+  text-align: center
+  text-transform: uppercase
+  font-family: "FuturaBT W05 Bold"
+
+// Font weights
+=font-weight-bold
+  font-weight: 700
+
+=font-weight-medium
+  font-weight: 500
+
+=font-weight-regular
+  font-weight: 400
+
+=font-weight-light
+  font-weight: 300
+
+=font-weight-thin
+  font-weight: 100
+
+// Box shadow
+=box-shadow
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2)
+
+=nav-shadow
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25)
+
+=box-shadow-hover
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5)
+
+// Button shadow
+=button-shadow
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3)
+
+// Size square
+=size-square($size)
+  height: $size
+  width: $size
+
+// Gradients
+=brand-color-gradient()
+  background: linear-gradient(-34.6deg, rgba($services-background-start-color, 0.6), rgba($services-background-end-color, 0.4))
+
+=grey-color-gradient()
+  background: linear-gradient(-34.6deg, $grey-gradient-start-color, $grey-gradient-end-color, $grey-gradient-start-color)
+
+=grey-color-vertical-gradient()
+  background: linear-gradient(10deg, $grey-gradient-start-color 0%, $grey-gradient-end-color 30%)
+
+=nav-bar-gradient()
+  background: linear-gradient(-34.6deg, $grey-gradient-start-color, $grey-gradient-end-color)
+
+=nav-button-gradient()
+  background: linear-gradient(-34.6deg, $nav-button-gradient-start-color, $nav-button-gradient-end-color)
+
+=projects-modal-gradient()
+  background: linear-gradient(-34.6deg, #000, rgba(#000, 0.9), rgba($projects-modal-gradient-start-color,0.85), rgba($projects-modal-gradient-end-color,0.8))
+
+=about-gradient()
+  background: linear-gradient(-34.6deg, $about-background-start-color, $about-background-end-color)
+
+=services-gradient()
+  background: linear-gradient(10deg, $services-background-start-color 0%, $grey-gradient-end-color 30%)
+
+// Standard border radius
+=border-radius()
+  border-radius: 3px
+
+// Slide
+=slide($percentage)
+  transform: translateY($percentage)
+
+// Media query
+=media($breakpoint)
+  @media (max-width: $breakpoint)
+    @content
+
+

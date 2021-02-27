@@ -1,0 +1,42 @@
+@import ../../global/sass-config/_mixins
+
+.footer
+  +grey-color-gradient()
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-evenly
+  padding: 0.5rem 0
+
+.footer__logo
+  height: 96px
+  margin: 24px 0
+
+.footer__link
+  color: $footer-text-color
+  transition: color .3s
+
+.footer__link:hover
+  color: $footer-text-hover-color
+
+.footer__item
+  color: $footer-text-color
+  margin: 0.5rem
+  +font-weight-light
+  font-size: $footer-item-font-size
+
+.footer__info
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 50%
+
++media($tablet-portrait)
+  .footer__info
+    flex-direction: row
+    width: 100%
+    justify-content: space-evenly
+  .footer__item
+    font-size: $footer-item-font-size--mobile

@@ -1,0 +1,27 @@
+<section class="services" id="{{ component.id }}">
+  <h1 class="services__header">
+    {{ component.title }}
+  </h1>
+  <div class="boxes">
+    {% for box in component.boxes %}
+      <div class="{{ box.class }}">
+        <img src="{{ box.icon }}" class="box__image" alt="" />
+        <h4 class="box__title">
+          {{ box.title }}
+        </h4>
+        {% for content in box.content %}
+          <div class="{{ content.class }}">
+            <div class="content__image-container">
+              <img
+                src="{{ content.image }}"
+                alt="{{ content.title }}"
+                class="content__image"
+              />
+            </div>
+            <div class="content__description">{{ content.description|safe }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</section>

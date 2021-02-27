@@ -1,0 +1,14 @@
+component: nav
+id: nav
+logo:
+  url: /static/images/logos/logo-only.svg
+  alt: !g.string home.company_name.text
+email: !g.yaml /content/data/contact.yaml?email
+phone: !g.yaml /content/data/contact.yaml?phone
+links:
+  - name: Services
+    url: '#services'
+  - name: Projects
+    url: /projects/
+  - name: About us
+    url: /about/

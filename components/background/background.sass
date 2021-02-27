@@ -1,0 +1,13 @@
+@import ./background-config
+
+.background-image
+  background-image: url('/static/images/we-background.png')
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  position: fixed
+  height: 100vh
+  width: 100vw
+  z-index: -999
+  opacity: 0
+  animation: fadein #{$background-image-fadein-time} forwards

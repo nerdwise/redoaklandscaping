@@ -1,0 +1,57 @@
+<nav class="nav">
+  <a href="/" class="nav__brand">
+    <img
+      src="{{ component.logo.url }}"
+      alt="{{ component.logo.alt }}"
+      class="nav__logo"
+    />
+  </a>
+  <ul class="nav__links">
+    {% for link in component.links %}
+    <a href="{{ link.url }}" class="nav__link">
+      <li class="nav__item">{{ link.name }}</li>
+    </a>
+    {% endfor %}
+  </ul>
+  <ul class="nav__buttons">
+    <a href="tel:{{ component.phone }}">
+      <button class="nav__button">
+        {{ component.phone }}
+      </button>
+    </a>
+    <a href="mailto:{{ component.email }}">
+      <button class="nav__button">
+        {{ component.email }}
+      </button>
+    </a>
+  </ul>
+  <a class="nav__header-link--mobile" href="tel:{{ component.phone }}">
+    <button class="nav__header-button--mobile nav__button--mobile">
+      {{ component.phone }} <i class="fas fa-phone"></i>
+    </button>
+  </a>
+  <div class="nav__menu">
+    <div class="nav__bar nav__bar--1"></div>
+    <div class="nav__bar nav__bar--2"></div>
+    <div class="nav__bar nav__bar--3"></div>
+  </div>
+</nav>
+<div class="nav--mobile">
+  <ul class="nav__content--mobile">
+    {% for link in component.links %}
+    <a href="{{ link.url }}" class="nav__link--mobile">
+      <li class="nav__item--mobile">{{ link.name }}</li>
+    </a>
+    {% endfor %}
+    <a href="tel:{{ component.phone }}">
+      <button class="nav__button--mobile">
+        {{ component.phone }} <i class="fas fa-phone"></i>
+      </button>
+    </a>
+    <a href="mailto:{{ component.email }}">
+      <button class="nav__button--mobile">
+        {{ component.email }} <i class="fas fa-envelope"></i>
+      </button>
+    </a>
+  </ul>
+</div>
